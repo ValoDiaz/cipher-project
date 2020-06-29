@@ -32,7 +32,7 @@ function encriptar () {
         console.log(muestraEncript);
         return encriptado;
 };
-
+/*
 function descencriptar () {
 let descifrado = "";
     for (let i = 0; i<(encriptado.length); i++){
@@ -43,4 +43,4 @@ let descifrado = "";
 }
     textDescencript.innerText = descifrado;
     return descifrado;
-};
+};*/
