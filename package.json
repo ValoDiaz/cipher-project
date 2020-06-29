@@ -1,0 +1,19 @@
+{
+  "name": "cipher-project",
+  "version": "1.0.0",
+  "description": "Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)\r es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio\r César lo usaba para enviar órdenes secretas a sus generales en los campos de\r batalla.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValoDiaz/cipher-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValoDiaz/cipher-project/issues"
+  },
+  "homepage": "https://github.com/ValoDiaz/cipher-project#readme"
+}
