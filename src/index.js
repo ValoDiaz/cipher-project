@@ -14,7 +14,7 @@ var textDescencript = document.getElementById("textDescencript");
 
 
 function encriptar () {
-    var resultCompleto = "Nombre: " + nameClient.value + " Correo: " + mail.value + " Numero: "  + numTel.value + " Dirección: " + direction.value;
+    var resultCompleto = "Nombre: " + nameClient.value + " Correo: " + mail.value + " Numero: "  + numTel.value + " Direccion: " + direction.value;
     result.innerText = resultCompleto;
     console.log(resultCompleto);
     let encriptado= "";
@@ -23,7 +23,8 @@ function encriptar () {
             console.log(resultCompleto.length);
             let asciiPosition = resultCompleto.charCodeAt(i);
             console.log(asciiPosition);
-            let converNum = (asciiPosition - 32 + numADesplazar.value) %95 + 32;
+            //let converNum= (asciiPosition - 65 + parseInt(numADesplazar.value)) %26 + 65
+            let converNum = (asciiPosition - 32 + parseInt(numADesplazar.value)) %95 + 32;
             console.log(converNum);
             encriptado += String.fromCharCode(converNum);
             console.log(encriptado);
@@ -31,16 +32,19 @@ function encriptar () {
         muestraEncript.innerText = encriptado;
         console.log(muestraEncript);
         return encriptado;
-};
-/*
-function descencriptar () {
-let descifrado = "";
-    for (let i = 0; i<(encriptado.length); i++){
-    let asciiPositionDos= encriptado.charCodeAt(i);
-    console.log(asciiPositionDos);
-    let converCifrado = (asciiPositionDos - 32 - numADesplazar.value) %95 + 32;
-    descifrado += String.fromCharCode(converCifrado);
 }
+
+function decodificar () {
+    let descifrado = "";
+    for (let i = 0; i<(muestraEncript.innerText.length); i++){
+        console.log(muestraEncript.innerText.length);
+    let asciiPositionDos= muestraEncript.innerText.charCodeAt(i);
+    console.log(asciiPositionDos);
+    let converCifrado = (asciiPositionDos - 32 - numADesplazar.value) %95 +32;
+    console.log(converCifrado);
+    descifrado += String.fromCharCode(converCifrado);
+    console.log(descifrado);
+    }
     textDescencript.innerText = descifrado;
-    return descifrado;
-};*/
+    return descifrado; 
+}

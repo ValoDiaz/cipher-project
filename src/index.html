@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div id="firstPart">
+        <div id="firstPart" class="container">
             <h2>ingresa el numero de espaciós a desplazar</h2>
             <input id="numADesplazar" type="number" >
             <h1>ingresa la información del cliente</h1>
@@ -16,19 +16,19 @@
             <input id="mail" type="text" >
             <h2>numero telefonico</h2>
             <input id="numTel" type="text">
-            <h2>dirección</h2>
+            <h2>direccion</h2>
             <input id="direction" type="text">
             <p></p>
-            <button id="encrip" type="button" onclick= "encriptar()" >Encriptar</button>
+            <button id="encript" type="button" onclick= "encriptar()" >Encriptar</button>
             <p id="result"></p> 
             <p id= "muestraEncript"></p>
         </div>
-        <div id="secondPart">
+        <div id="secondPart" class="container">
             <h2>ingresa el texto encriptado</h2>
             <input id="textEncript" type="text">
             <p></p>
-            <button id="descencript" type="button" onclick = "descencriptar()" >Descencriptar</button>
-            <p id= "textDescencript" ></p> 
+            <button id="Descencriptar" onclick= "decodificar()">Descencriptar</button>
+            <p id="textDescencript" ></p> 
         </div>
         <script src="cipher.js"></script>
         <script src="index.js"></script>
