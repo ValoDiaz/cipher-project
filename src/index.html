@@ -7,28 +7,32 @@
     </head>
     <body>
         <div id="firstPart" class="container">
-            <h2>ingresa el numero de espaciós a desplazar</h2>
+            <h1>Bienvenido Aqui podras crear y mantener seguro un listado de clientes</h1>
+            <h3 class="h2">Num.</h3>
             <input id="numADesplazar" type="number" >
-            <h1>ingresa la información del cliente</h1>
-            <h2>nombre</h2>
+            <h3>Nombre</h3>
             <input id="nameClient" type="text" >
-            <h2>email</h2>
+            <h3>Correo Electronico</h3>
             <input id="mail" type="text" >
-            <h2>numero telefonico</h2>
+            <h3>Numero Fijo o Portatil</h3>
             <input id="numTel" type="text">
-            <h2>direccion</h2>
+            <h3>Direccion (colonia/calle/Num/Int</h3>
             <input id="direction" type="text">
             <p></p>
             <button id="encript" type="button" onclick= "encriptar()" >Encriptar</button>
-            <p id="result"></p> 
-            <p id= "muestraEncript"></p>
+            <p class="desc&cif" id="result"></p> 
+            <p class="desc&cif" id= "muestraEncript"></p>
+            <p id="mensClave"></p>
         </div>
+        
         <div id="secondPart" class="container">
-            <h2>ingresa el texto encriptado</h2>
+            <h3>ingresa el texto y el numero del descifrado</h3>
             <input id="textEncript" type="text">
             <p></p>
+            <input id="nvoNumero" type="number">
+            <p></p>
             <button id="Descencriptar" onclick= "decodificar()">Descencriptar</button>
-            <p id="textDescencript" ></p> 
+            <p class="desc&cif" id="textDescencript" ></p> 
         </div>
         <script src="cipher.js"></script>
         <script src="index.js"></script>

@@ -9,10 +9,37 @@ var numADesplazar=document.getElementById("numADesplazar");
 var muestraEncript= document.getElementById("muestraEncript");
 var descencriptar = document.getElementById("descencriptar");
 var textEncript= document.getElementById("textEncript");
-var textDescencript = document.getElementById("textDescencript");
+var textDescencript = document.getElementById("textDescencript");   
+var nvoNumero = document.getElementById("nvoNumero");
+
+
+// result.innerText = resultCompleto;
+
+function encriptar(){
+    var resultCompleto = "Nombre: " + nameClient.value + " Correo: " + mail.value + " Numero: "  + numTel.value + " Direccion: " + direction.value;
+    result.innerText = resultCompleto;
+    let resultadoEncriptado = window.cipher.encode(resultCompleto,numADesplazar.value);
+    console.log(resultadoEncriptado);
+    muestraEncript.innerText =resultadoEncriptado;
+    alert(" copia y elimina el ultimo numero del cifrado")
+}
+
+
+    
 
 
 
+function decodificar(){
+    var cualquierCifrado= textEncript.value
+    console.log(cualquierCifrado);
+    var resultadoDesifrado =  window.cipher.decode(cualquierCifrado,nvoNumero.value);
+    console.log(resultadoDesifrado);
+    textDescencript.innerText = resultadoDesifrado ;
+}
+
+
+
+/*
 function encriptar () {
     var resultCompleto = "Nombre: " + nameClient.value + " Correo: " + mail.value + " Numero: "  + numTel.value + " Direccion: " + direction.value;
     result.innerText = resultCompleto;
@@ -47,4 +74,4 @@ function decodificar () {
     }
     textDescencript.innerText = descifrado;
     return descifrado; 
-}
+}*/
