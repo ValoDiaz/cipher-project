@@ -25,10 +25,6 @@ function encriptar(){
 }
 
 
-    
-
-
-
 function decodificar(){
     var cualquierCifrado= textEncript.value
     console.log(cualquierCifrado);
